@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Reporting Tool</title>
     <style>
+        /* Body Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,6 +13,7 @@
             background-color: #f4f4f9;
         }
 
+        /* Navigation Bar Styles */
         .navbar {
             background-color: #333;
             padding: 10px 20px;
@@ -21,9 +23,6 @@
             .navbar h1 {
                 display: inline;
                 margin-right: 20px;
-            }
-            .navbar h2 {
-                font-family: Times New Roman;
             }
 
             .navbar .links a {
@@ -36,6 +35,7 @@
                     text-decoration: underline;
                 }
 
+        /* Content Section Styles */
         .content {
             padding: 20px;
             background-color: #fff;
@@ -44,6 +44,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Form Group Styles */
         .form-group {
             margin-bottom: 15px;
         }
@@ -62,6 +63,7 @@
                 border-radius: 4px;
             }
 
+        /* Button Styles */
         button {
             padding: 10px 15px;
             background-color: #333;
@@ -75,121 +77,67 @@
                 background-color: #555;
             }
 
+        /* Report Detail Styles */
         .report-detail {
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
             margin-bottom: 10px;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
             background-color: #f0f0f0;
         }
-
-        /* Admin Dashboard Container */
-        .content {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Dashboard Header */
-        #admin h2 {
-            text-align: center;
-            padding: 20px;
-            background-color: #3498db;
-            color: white;
-        }
-
-        /* Navigation */
-        .admin-nav {
-            background-color: #ddd;
-            padding: 10px;
-        }
-
-            .admin-nav ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-            }
-
-            .admin-nav li {
-                margin-right: 20px;
-            }
-
-            .admin-nav a {
-                text-decoration: none;
-                color: #333;
-                padding: 10px;
-                border-radius: 5px;
-            }
-
-                .admin-nav a:hover {
-                    background-color: #ccc;
-                }
-
-        /* Content Area */
-        .admin-content {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .admin-section {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-       
-       
     </style>
-
 </head>
 <body>
 
     <nav class="navbar">
         <h1>Online Reporting Tool</h1>
         <div class="links">
-           
-
             <ul>
-              
-                <li><a href="">Home</a></li>
-                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#submit-report">Submit Report</a></li>
                 <li><a href="adminlogin.html">Administrator</a></li>
-
             </ul>
-
         </div>
     </nav>
 
     <div class="content" id="home">
         <h2>Welcome to the Online Reporting Tool</h2>
-        <p>Our platform empowers individuals to document and share experiences of human rights abuses. 
-        By providing a secure and accessible space, we aim to amplify voices, demand accountability, and contribute to a world where human rights are upheld. 
-        Your reports are vital in building a comprehensive picture of the challenges faced by communities and individuals worldwide. 
-        Join us in creating a lasting impact by sharing your story.</p>
-    
+        <p>
+            Our platform empowers individuals to document and share experiences of human rights abuses. 
+            By providing a secure and accessible space, we aim to amplify voices, demand accountability, and contribute to a world where human rights are upheld. 
+            Your reports are vital in building a comprehensive picture of the challenges faced by communities and individuals worldwide. 
+            Join us in creating a lasting impact by sharing your story.
+        </p>
+    </div>
 
     <div class="content" id="submit-report">
+        <h2>Submit a Report</h2>
         <form class="report-form">
-            <h2>Submit a Report</h2>
             <div class="form-group">
-                <label for="title">Sex</label>
-                <input type="text" id="title" name="title" required>
+                <label for="name">Your Name (Optional):</label>
+                <input type="text" id="name" name="name">
             </div>
             <div class="form-group">
-                <label for="description">Description</label>
+                <label for="email">Your Email (Optional):</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="location">Location of Incident:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Describe the Incident:</label>
                 <textarea id="description" name="description" required></textarea>
             </div>
             <div class="form-group">
-                <label for="anonymity">
-                    <input type="checkbox" id="anonymity" name="anonymity">
-                    Submit Anonymously
-                </label>
-            
+                <label for="evidence">Upload Evidence (Optional):</label>
+                <input type="file" id="evidence" name="evidence" multiple>
+            </div>
             <button type="submit">Submit Report</button>
         </form>
     </div>
@@ -198,6 +146,8 @@
         <p>For any questions or concerns, contact us at: <a href="mailto:pvchr.india@gmail.com">pvchr.india@gmail.com</a></p>
         <p>Phone: +91 9935599333</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
