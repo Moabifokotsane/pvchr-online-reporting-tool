@@ -1,137 +1,80 @@
-<style >
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
-
-.navbar {
-    background-color: #333;
-    padding: 10px 20px;
-    color: #fff;
-}
-
-    .navbar h1 {
-        display: inline;
-        margin-right: 20px;
-    }
-
-    .navbar .links a {
-        color: #fff;
-        margin-right: 15px;
-        text-decoration: none;
-    }
-
-        .navbar .links a:hover {
-            text-decoration: underline;
-        }
-
-.content {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-    .form-group label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-
-button {
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-    button:hover {
-        background-color: #555;
-    }
-
-.report-detail {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
+/* style.css */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bfdbb1ca; /* Light gray background */
 }
 
-/* Admin Dashboard Container */
-.content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Dashboard Header */
-#admin h2 {
-    text-align: center;
-    padding: 20px;
-    background-color: #3498db;
-    color: white;
+form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigation */
-.admin-nav {
-    background-color: #ddd;
-    padding: 10px;
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-    .admin-nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-
-    .admin-nav li {
-        margin-right: 20px;
-    }
-
-    .admin-nav a {
-        text-decoration: none;
-        color: #333;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-        .admin-nav a:hover {
-            background-color: #ccc;
-        }
-
-/* Content Area */
-.admin-content {
-    flex: 1;
-    padding: 20px;
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.admin-section {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-</style >
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; /* Allow resizing only vertically */
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: #4CAF50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px; /* Add some padding for content */
+  text-align: center; /* Center the text within the footer */
+}
+
+footer p {
+  margin: 5px 0; /* Add some space between paragraphs */
+}
+
+footer a {
+  color: #333; /* Darker text color for the email link */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #3e07c9; /* Black text color on hover */
+}
